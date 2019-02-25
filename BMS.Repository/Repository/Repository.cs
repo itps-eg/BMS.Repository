@@ -37,7 +37,7 @@ namespace BMS.Repository.Repository
             return await Dbset.Where(predicate).ToListAsync();
         }
 
-        public async Task<IList<TEntity>> Find(Expression<Func<TEntity, bool>> predicate, params Expression<Func<TEntity, object>>[] includes)
+        public async Task<IEnumerable<TEntity>> Find(Expression<Func<TEntity, bool>> predicate, params Expression<Func<TEntity, object>>[] includes)
         {
             var query = Dbset.OfType<TEntity>();
             query = includes.Aggregate(query, (current, property) =>

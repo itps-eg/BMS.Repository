@@ -13,7 +13,7 @@ namespace BMS.Repository.Repository
         Task<IEnumerable<TEntity>> GetAll(params Expression<Func<TEntity, object>>[] includes);
 
         Task<IEnumerable<TEntity>> Find(Expression<Func<TEntity, bool>> predicate);
-        Task<IList<TEntity>> Find(Expression<Func<TEntity, bool>> predicate, params Expression<Func<TEntity, object>>[] includes);
+        Task<IEnumerable<TEntity>> Find(Expression<Func<TEntity, bool>> predicate, params Expression<Func<TEntity, object>>[] includes);
         Task<TEntity> FirstOrDefault(Expression<Func<TEntity, bool>> predicate);
 
         TEntity Add(TEntity entity);
