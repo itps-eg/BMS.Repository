@@ -10,7 +10,7 @@ namespace BMS.Admin.Interfaces.BusinessInterface
     public interface IVehicleBusiness
     {
 
-        Task<IList<VehicleDTO>> GetAllVehicle();
+        Task<IEnumerable<VehicleDTO>> GetAllVehicle();
         Task<VehicleDTO> GetVehicle(int id);
         Task<bool> AddVehicle(VehicleParameters vehicleParameters);
         Task<bool> UpdateVehicle(VehicleDTO vehicleDTO);

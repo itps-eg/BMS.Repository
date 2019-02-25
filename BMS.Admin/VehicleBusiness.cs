@@ -3,6 +3,7 @@ using BMS.Admin.Apstraction;
 using BMS.Admin.DTO;
 using BMS.Admin.DTO.Parameters;
 using BMS.Admin.Interfaces.BusinessInterface;
+using BMS.Admin.Interfaces.DtoInterFace;
 using BMS.DataLyar.Entities;
 using BMS.Repository.UnitOfWork;
 using System;
@@ -19,35 +20,42 @@ namespace BMS.Admin
                 
         }
 
-        public Task<bool> AddVehicle(VehicleParameters vehicleParameters)
+        public async Task<bool> AddVehicle(VehicleParameters vehicleParameters)
         {
-           
+            var veicle = Mapper.Map<VehicleParameters, Vehicle>(vehicleParameters);
+            _unitOfWork.repo.Add(veicle);
+            return await _unitOfWork.SaveChanges () > 0;
         }
 
-        public Task<bool> DeleteVehicle(int id)
+        public async Task<bool> DeleteVehicle(int id)
         {
-            throw new NotImplementedException();
+            _unitOfWork.repo.Remove(x => x.ID == id);
+
+            return await _unitOfWork.SaveChanges() > 0;
         }
 
         public async Task<IEnumerable<VehicleDTO>> GetAllVehicle()
         {
-                var getall=    _unitOfWork.repo.GetAll();
+                var getall= await _unitOfWork.repo.GetAll();
+                var vehicleDTOs = Mapper.Map<IEnumerable<Vehicle>, IEnumerable<VehicleDTO>>(getall);
+                return vehicleDTOs;
             
         }
 
-        public Task<VehicleDTO> GetVehicle(int id)
+        public async Task<VehicleDTO> GetVehicle(int id)
         {
-            throw new NotImplementedException();
+            var vehicle = await _unitOfWork.repo.FirstOrDefault(wer => wer.ID == id);
+            var vehicleDto = Mapper.Map<Vehicle, VehicleDTO>(vehicle);
+            return vehicleDto;
         }
 
-        public Task<bool> UpdateVehicle(VehicleDTO vehicleDTO)
+        public async Task<bool> UpdateVehicle(VehicleDTO vehicleDTO)
         {
-            throw new NotImplementedException();
+            var vehicle = Mapper.Map<IvehicleDTO, Vehicle>(vehicleDTO);
+            _unitOfWork.repo.Update(vehicle);
+            return await _unitOfWork.SaveChanges() > 0;
         }
 
-        Task<IList<VehicleDTO>> IVehicleBusiness.GetAllVehicle()
-        {
-            throw new NotImplementedException();
-        }
+       
     }
 }

@@ -41,7 +41,7 @@ namespace BMS.Repository.Repository
         {
             var query = Dbset.OfType<TEntity>();
             query = includes.Aggregate(query, (current, property) =>
-               current.Include(property));
+            current.Include(property));
             return await query.Where(predicate).ToListAsync();
         }
 
