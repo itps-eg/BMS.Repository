@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BMS.Repository", "BMS.Repos
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BMS.DataLyar", "BMS.DataLyar\BMS.DataLyar.csproj", "{B0E957E9-EA46-4A16-8C4A-B357E55A5B03}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BMS.Admin", "BMS.Admin\BMS.Admin.csproj", "{2E603BA3-1F3C-460D-8BC7-E328D42CDABA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BMS.Domain", "BMS.Admin\BMS.Domain.csproj", "{2E603BA3-1F3C-460D-8BC7-E328D42CDABA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

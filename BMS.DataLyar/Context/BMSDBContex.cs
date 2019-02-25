@@ -14,7 +14,7 @@ namespace BMS.DataLyar.Context
         }
 
 
-        public virtual DbSet <Vehicle> Vehicles { get; set; }
+        public  DbSet <Vehicle> Vehicles { get; set; }
     }
 
 }

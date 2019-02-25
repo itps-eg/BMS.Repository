@@ -50,11 +50,6 @@ namespace BMS.Repository.Repository
             return await Dbset.FirstOrDefaultAsync(predicate);
         }
 
-        public async Task<TEntity> Get(int id)
-        {
-            return await Dbset.FindAsync(id);
-        }
-
         public async Task<TEntity> Get(params object[] keys)
         {
             return await Dbset.FindAsync(keys);
