@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace BMS.Admin.Interfaces.DtoInterFace
+namespace BMS.Domain.Interfaces.DtoInterFace
 {
    public interface IvehicleDTO
     {

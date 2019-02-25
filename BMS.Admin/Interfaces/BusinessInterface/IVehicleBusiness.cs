@@ -1,11 +1,11 @@
-﻿using BMS.Admin.DTO;
-using BMS.Admin.DTO.Parameters;
+﻿using BMS.Domain.DTO;
+using BMS.Domain.DTO.Parameters;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BMS.Admin.Interfaces.BusinessInterface
+namespace BMS.Domain.Interfaces.BusinessInterface
 {
     public interface IVehicleBusiness
     {

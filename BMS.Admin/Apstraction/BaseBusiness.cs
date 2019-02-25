@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace BMS.Admin.Apstraction
+namespace BMS.Domain.Apstraction
 {
   public  class BaseBusiness<T> where T :class 
     {

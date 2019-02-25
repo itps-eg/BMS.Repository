@@ -1,9 +1,9 @@
-﻿using BMS.Admin.Interfaces.DtoInterFace;
+﻿using BMS.Domain.Interfaces.DtoInterFace;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace BMS.Admin.DTO
+namespace BMS.Domain.DTO
 {
     public class VehicleDTO : IvehicleDTO
     {

@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace BMS.Admin.Mapping
+namespace BMS.Domain.Mapping
 {
    public partial class AutoMapperProfile :Profile
     {

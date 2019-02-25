@@ -1,11 +1,11 @@
-﻿using BMS.Admin.DTO.Parameters;
-using BMS.Admin.Interfaces.DtoInterFace;
+﻿using BMS.Domain.DTO.Parameters;
+using BMS.Domain.Interfaces.DtoInterFace;
 using BMS.DataLyar.Entities;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace BMS.Admin.Mapping
+namespace BMS.Domain.Mapping
 {
    public partial class AutoMapperProfile
     {

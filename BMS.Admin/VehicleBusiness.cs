@@ -1,9 +1,9 @@
 ﻿using AutoMapper;
-using BMS.Admin.Apstraction;
-using BMS.Admin.DTO;
-using BMS.Admin.DTO.Parameters;
-using BMS.Admin.Interfaces.BusinessInterface;
-using BMS.Admin.Interfaces.DtoInterFace;
+using BMS.Domain.Apstraction;
+using BMS.Domain.DTO;
+using BMS.Domain.DTO.Parameters;
+using BMS.Domain.Interfaces.BusinessInterface;
+using BMS.Domain.Interfaces.DtoInterFace;
 using BMS.DataLyar.Entities;
 using BMS.Repository.UnitOfWork;
 using System;
@@ -11,7 +11,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BMS.Admin
+namespace BMS.Domain
 {
     public class VehicleBusiness : BaseBusiness<Vehicle>, IVehicleBusiness
     {

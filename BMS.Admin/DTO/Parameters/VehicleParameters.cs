@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace BMS.Admin.DTO.Parameters
+namespace BMS.Domain.DTO.Parameters
 {
    public class VehicleParameters
     {
