@@ -10,6 +10,8 @@ namespace BMS.DataLyar.Entities
         [Key]
         public int ID { get; set; }
 
+        public string Code { get; set; }
+
         public string Model { get; set; }
 
         public DateTime Year { get; set; }

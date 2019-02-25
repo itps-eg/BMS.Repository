@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BMS.Repository", "BMS.Repository\BMS.Repository.csproj", "{415FA6BA-3DC6-4C3A-B299-74DB93AED8C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BMS.Repository", "BMS.Repository\BMS.Repository.csproj", "{415FA6BA-3DC6-4C3A-B299-74DB93AED8C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BMS.DataLyar", "BMS.DataLyar\BMS.DataLyar.csproj", "{B0E957E9-EA46-4A16-8C4A-B357E55A5B03}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BMS.DataLyar", "BMS.DataLyar\BMS.DataLyar.csproj", "{B0E957E9-EA46-4A16-8C4A-B357E55A5B03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BMS.Admin", "BMS.Admin\BMS.Admin.csproj", "{2E603BA3-1F3C-460D-8BC7-E328D42CDABA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{B0E957E9-EA46-4A16-8C4A-B357E55A5B03}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0E957E9-EA46-4A16-8C4A-B357E55A5B03}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B0E957E9-EA46-4A16-8C4A-B357E55A5B03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E603BA3-1F3C-460D-8BC7-E328D42CDABA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E603BA3-1F3C-460D-8BC7-E328D42CDABA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E603BA3-1F3C-460D-8BC7-E328D42CDABA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E603BA3-1F3C-460D-8BC7-E328D42CDABA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

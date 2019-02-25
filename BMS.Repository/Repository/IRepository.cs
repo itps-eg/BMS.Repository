@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BMS.Repository.Repository
 {
-    interface IRepository<TEntity> where TEntity : class
+  public  interface IRepository<TEntity> where TEntity : class
     {
         Task<TEntity> Get(params object[] keys);
         Task<IEnumerable<TEntity>> GetAll();

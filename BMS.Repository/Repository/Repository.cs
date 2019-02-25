@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace BMS.Repository.Repository
 {
-    class Repository<TEntity> : IRepository<TEntity> where TEntity : class
+   public class Repository<TEntity> : IRepository<TEntity> where TEntity : class
     {
         private const bool TrueExpression = true;
         protected readonly DbContext Context;

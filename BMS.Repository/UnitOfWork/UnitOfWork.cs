@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Storage;
 
 namespace BMS.Repository.UnitOfWork
 {
-    class UnitOfWork<T> : IUnitOfWork<T> where T : class
+  public  class UnitOfWork<T> : IUnitOfWork<T> where T : class
     {
         private DbContext _context;
         private IDbContextTransaction _transaction;

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BMS.Repository.UnitOfWork
 {
-    interface IUnitOfWork<T>:IDisposable where T:class
+   public interface IUnitOfWork<T>:IDisposable where T:class
     {
         IRepository<T> repo { get; }
         Task<int> SaveChanges();
